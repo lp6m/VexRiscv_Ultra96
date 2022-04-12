@@ -11,8 +11,9 @@ Open new block design, and put `Zynq MPSoC` block from `Add IP`, and run `Run Bl
 ### Clock and reset placement to use design as a Vitis Platform
 Place `Clock Wizard`, set clock frequency as the following image.  
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//clock_wizard.png?raw=true" width=70%/>
-Place 5 `Processing Reset`, and connect clock and reset as the following image.
-<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//platform_bd.png?raw=true" width=80%/>
+Place 5 `Processing Reset`, and connect clock and reset as the following image.  
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//platform_bd.png?raw=true" width=80%/>  
+
 Double click `Zynq MPSoC` block, and modify the configuration:
 - `PS-PL Configuration -> PS-PL Interfaces -> Master Interface`
   enable only `AXI HPM0 FPD`.
@@ -24,7 +25,7 @@ Double click `Zynq MPSoC` block, and modify the configuration:
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//zynq_ps_pl_conf.png?raw=true" width=40%/>
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//pl_clock.png?raw=true" width=60%/>
 
-Open `Project Manager -> Settings` from flow navigator at the left of the screen, and mark `Project is an extensible Vitis platform` as checked.  
+Open `Project Manager -> Settings` from flow navigator at the left of the screen, and mark `Project is an extensible Vitis platform` as checked.
 Then, configure platform setting from the `Platform Setup` tab.
 Set `AXI Port` and `Clock` as the following image. (Note that if clock id=0 does not exist, an error will occur in Vitis.)  
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//platform_axi.png?raw=true" width=50%/>
@@ -90,6 +91,7 @@ Perhaps auto assign result will not look like the following image, so set it up 
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//address_editor.png?raw=true" width=80%/>
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//address_map.png?raw=true" width=50%/>
 
+If you want to change the size of the BRAM of RISC-V, change the `Range` value from the address editor.  
 
 ## Implementation
 Right click `Sources -> design_1.bd` and select `Create HDL Wrapper`.  
