@@ -30,10 +30,10 @@ Launch serial console application on your host PC (I use `gtkterm`), and select 
   
 From `Assistant` window at left bottom, right click `test_system -> test -> Release` and select `Run -> Launch on Hardware`.  
 Bitstream is automatically written to the board and Hello world is displayed on the serial console.  
-<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vitis_standalone/image/hello_world.png?raw=true" width=50%>
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vitis_standalone/image/helloworld.png?raw=true" width=70%>
 
 ## Run RISC-V test
 Overwrite `helloworld.c` to the content of this repository, and run.  
 In test code, write RISC-V instruction at first. For every test case, run RISC-V core by resetting `pl_resetn1` after writing input data.  
 
-[image]
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vitis_standalone/image/riscv_standalone.png?raw=true" width=70%>
