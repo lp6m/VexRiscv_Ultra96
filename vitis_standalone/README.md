@@ -1,6 +1,14 @@
 # Run RISC-V on standalone mode
 
-Open `vivado/riscv_base_prj/riscv_base_prj.xpr` in Vivado, and launch Vitis IDE from `Tools->Launch Vitis IDE`.  
+Open `vivado/riscv_base_prj/riscv_base_prj.xpr` in Vivado, and export hardware file in `XSA(Xilinx Support Archive)` format.  
+You can export xsa file by the following tcl command:  
+```sh
+cd <VivadoProjectDir>
+write_hw_platform -include_bit riscv_base_prj.xsa
+validate_hw_platform ./riscv_base_prj.xsa
+```
+
+Launch Vitis IDE from `Tools->Launch Vitis IDE`.  
 Set workspace as you like. Here we set `<Repository directory>/vivado/riscv_base_prj/vitis`.  
 ## Create new project
 In Vitis IDE, select `File->New Application Project`  
