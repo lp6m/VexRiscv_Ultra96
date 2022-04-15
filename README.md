@@ -55,7 +55,10 @@ Test floating point operations on RISC-V cores in standalone mode.
 See [vitis_standalone/README.md](/vitis_standalone/README.md) about the detail.  
 
 # Run RISC-V from Petalinux
-**TODO**
+Test floating point operations on RISC-V cores from petalinux.  
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/petalinux/images/petalinux.png?raw=true" width=70%>
+
+See [petalinux/README.md](/petalinux/README.md) about the detail.  
 
 # Crosscompile C code for RISC-V
 **TODO**
