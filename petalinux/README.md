@@ -4,6 +4,7 @@ This project does NOT support wifi on Ultra96-V2 board, only USB-LAN adapter is 
 ```sh
 source <petalinux_2020.2_install_dir>/settings.sh
 cd <Repository Directory>/petalinux/riscv_base_prj
+cp ../../vivado/riscv_base_prj/riscv_base_prj.xsa ./project-spec/hw-description/system.xsa
 petalinux-build
 petalinux-package --boot --fsbl ./images/linux/zynqmp_fsbl.elf --fpga ./images/linux/system.bit --uboot --force
 ```
