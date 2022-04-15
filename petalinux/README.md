@@ -45,7 +45,8 @@ petalinux-config
 - Change UART port
 change `uart0` to `uart1`.  
 
-<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/petalinux/images/serial_port.png?raw=true" width=60%>
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/petalinux/images/serial_port.png?raw=true" width=60%>  
+
 - Change Image packing Configuration  
 
 change `Root file system` to ext4.  
@@ -66,7 +67,8 @@ petalinux-config -c kernel
 - Enable USB-LAN r8152 driver  
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/petalinux/images/usblan.png?raw=true" width=60%>
 
-- Disable CPU low power mode
+- Disable CPU low power mode  
+  
 Disable `CPU Power Management -> CPU Frequency Scaling`, `CPU Power Management -> CPU Idle`.  
 
 ## Modify rootfs config

@@ -10,7 +10,8 @@ Open new block design, and put `Zynq MPSoC` block from `Add IP`, and run `Run Bl
 
 ### Clock and reset placement to use design as a Vitis Platform
 Place `Clock Wizard`, set clock frequency as the following image.  
-<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//clock_wizard.png?raw=true" width=70%/>
+<img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//clock_wizard.png?raw=true" width=70%/>  
+  
 Place 5 `Processing Reset`, and connect clock and reset as the following image.  
 <img src="https://github.com/lp6m/VexRiscv_Ultra96/blob/media/vivado/images//platform_bd.png?raw=true" width=80%/>  
 
