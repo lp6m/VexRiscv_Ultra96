@@ -61,7 +61,8 @@ Test floating point operations on RISC-V cores from petalinux.
 See [petalinux/README.md](/petalinux/README.md) about the detail.  
 
 # Crosscompile C code for RISC-V
-**TODO**
+Setup crosscompiler with [crosstool-NG](https://github.com/crosstool-ng/crosstool-ng).  
+See [crosscompile/README.md](/crosscompile/README.md) about the detail.  
 
 # Export as Vitis platform
 **TODO**
