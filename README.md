@@ -65,4 +65,6 @@ Setup crosscompiler with [crosstool-NG](https://github.com/crosstool-ng/crosstoo
 See [crosscompile/README.md](/crosscompile/README.md) about the detail.  
 
 # Export as Vitis platform
-**TODO**
+Export RISC-V design and petalinux environment as Vitis platform.  
+See [export_vitis/README.md](/export_vitis/README.md) about the detail.  
+This platform is used base project for [Vertical-Beach/ai-edge-contest-5](https://github.com/Vertical-Beach/ai-edge-contest-5)
